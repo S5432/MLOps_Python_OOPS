@@ -1,10 +1,36 @@
 class chatter:
+
+    # for static method
+
+    __user_id = 1
     def __init__(self):
+        self.id = chatter.__user_id # for static method
+        chatter.__user_id += 1      # self not acces this attribute only class can access.
+        self.__name = "Default User" # only using for encapsulation and getter and setter method.
         self.username = ""
         self.password = ""
         self.loggedin = False
-        self.menu()
+        #self.menu()
     
+
+    @staticmethod
+    def get_id():
+        return chatter.__user_id
+    
+    @staticmethod
+    def set_id(val):
+        chatter.__user_id = val
+
+
+    def get_name(self):  # getter
+        return self.__name
+    
+    def set_name(self,value):  # setter
+        self.__name = value
+
+
+
+
     def menu(self):
         user_input = input(""" Welcome to Chatter!! How would you like to proceed?
                            1. Press 1 to Signin
@@ -66,6 +92,6 @@ class chatter:
             print("You need to signin first to message.")
         print("\n")
         self.menu()
-obj = chatter()
+# obj = chatter()
         
        
