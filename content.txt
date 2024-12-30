@@ -1,0 +1,11 @@
+1. Class and Object (Example)
+
+class has data/attributes and method/function.
+class attributes called itself but method called manually.
+why python is called OOPs: because everything in python is an object(data structure, data type etc.)
+
+Advantage of OOPs:
+> You can create your own datatypes.
+> code resuability
+> debugging
+> easy to colab.
