@@ -9,3 +9,8 @@ Advantage of OOPs:
 > code resuability
 > debugging
 > easy to colab.
+
+End to end Proejct(Chatter)
+> Encapsulation
+> Getter and setter
+> Static method
